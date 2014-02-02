@@ -5,6 +5,7 @@ angular.module('sheamusApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
+  'ngAnimate',
   'restangular'
 ])
   .config ($routeProvider, $locationProvider, $httpProvider, RestangularProvider) ->

@@ -89,3 +89,16 @@ body {
         border-bottom: 0;
     }
 }
+
+.slide {
+  &.ng-enter, &.ng-leave {
+    -webkit-transition:0.2s linear all;
+    transition:0.2s linear all;
+  }
+  &.ng-enter.ng-enter-active, &.ng-leave {
+    opacity: 1;
+  }
+  &.ng-leave.ng-leave-active, &.ng-enter {
+    opacity: 0;
+  }
+}
