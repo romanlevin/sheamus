@@ -14,6 +14,7 @@ angular.module('sheamusApp')
       $scope.removeThing = (thing) ->
         thing.remove().then (->
           _.pull($scope.awesomeThings, thing)
-        ), ->
+        ), (error)->
           $log.error "Couldn't remove thing #{thing.name}"
-  
+          $log.error error
+
