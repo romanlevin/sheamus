@@ -1,6 +1,6 @@
 new-thing-form
 
-div(ng-repeat='thing in awesomeThings')
-  h4 {{thing.name}}
-  p {{thing.info}}
-  button.btn.btn-primary(ng-click='removeThing(thing)') Remove
+.col-md-12(ng-repeat='thing in awesomeThings')
+    h4 {{thing.name}}
+    p {{thing.info}}
+    button.btn.btn-primary(ng-click='removeThing(thing)') Remove
