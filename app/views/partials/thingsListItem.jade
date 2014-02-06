@@ -1,0 +1,8 @@
+li.list-group-item(ng-switch , on="mode.edit")
+  div(ng-switch-default)
+    span.badge {{ thing.awesomeness }}
+    h4 {{ thing.name }}
+    p {{ thing.info }}
+    button.btn.btn-primary(ng-click='removeThing(thing)') Remove
+    button.btn.btn-primary(ng-click='editThing()') Edit
+  thing-form(ng-switch-when="edit")

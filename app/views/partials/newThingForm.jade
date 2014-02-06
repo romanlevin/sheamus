@@ -1,12 +1,2 @@
 h4 Create a new thing
-form.col-md-8.col-md-offset-2(ng-submit='submit()', role='form')
-  .form-group
-    label(for='newThing.name') Name
-    input.form-control(type='text', id='newThing.name', ng-model='newThing.name', placeholder='name')
-  .form-group
-    label(for='newThing.info') Info
-    textarea.form-control(id='newThing.info', ng-model='newThing.info', placeholder='info')
-  .form-group
-    label(for='newThing.awesomeness') Awesomeness
-    input.form-control(type='number', id='newThing.awesomeness', ng-model='newThing.awesomeness', placeholder='awesomeness')
-  button.btn.btn-default(type='submit') Submit!
+ng-include(src="'partials/thingForm'")

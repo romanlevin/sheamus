@@ -1,8 +1,0 @@
-new-thing-form
-
-ul.list-group.col-md-12.slide(ng-repeat='thing in awesomeThings | orderBy: \'-awesomeness\'')
-  li.list-group-item
-    span.badge {{ thing.awesomeness }}
-    h4 {{ thing.name }}
-    p {{ thing.info }}
-    button.btn.btn-primary(ng-click='removeThing(thing)') Remove
